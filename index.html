@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="result"></p>
+
+    <p id="result1"></p>
+
+    <p id="demo">Hello</p>
+
+    <script>
+      function myFunction() {
+        document.getElementById("result").innerHTML =
+          document.getElementById("demo").firstChild.nodeValue;
+
+        document.getElementById("result1").innerHTML =
+          document.getElementById("demo").childNodes[0].nodeValue;
+      }
+    </script>
+  </body>
+</html>
